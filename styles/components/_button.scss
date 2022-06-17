@@ -1,0 +1,27 @@
+.btn {
+   font-family: "Open Sans";
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 25px;
+   text-align: center;
+   text-transform: capitalize;
+   color: $white_color;
+   background: none;
+   border: 1px solid $white_color;
+   outline: none;
+   padding: 1em 5em;
+   transition: all 0.3s;
+}
+
+.btn:hover {
+   color: $pink_color;
+   border: 1px solid $pink_color;
+   cursor: pointer;
+}
+
+.btn:active {
+   color: $white_color;
+   background: $red_color;
+   border: none;
+   cursor: pointer;
+}

@@ -1,0 +1,81 @@
+.form {
+   max-width: 470px;
+   height: min-content;
+   background-color: $white_color;
+   border-radius: 10px;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+   flex-shrink: 0;
+
+   @media (max-width:$screen-laptop) {
+      max-width: 400px;
+   }
+
+   @media (max-width:$screen-sm-min-small) {
+      max-width: 280px;
+   }
+
+   &__inner {
+      padding: 40px 50px 60px;
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__title {
+      margin-bottom: 70px;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 33px;
+      text-align: center;
+      text-transform: uppercase;
+      color: $dark_grey_color;
+
+      >span {
+         color: $pink_color;
+      }
+   }
+
+   &__label {
+      font-family: 'Open Sans';
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      color: $label_color;
+   }
+
+   &__input {
+         outline: none;
+         border: none;
+         border-bottom: 1px solid $label_color;
+         padding: 5px;
+         font-size: 14px;
+         margin-bottom: 1.5em;
+   }
+
+   &-btn {
+      padding: 1.3em;
+      border: none;
+      background-color: $pink_color;
+      font-family: 'Open Sans';
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 20px;
+      color: $white_color;
+      transition: background-color 0.3s;
+   }
+
+   &-btn:hover {
+      cursor: pointer;
+      background-color: $red_color;
+   }
+
+   &-btn:active {
+      cursor: pointer;
+      background-color: $pink_color;
+      box-shadow: 0px 0px 6px 5px rgba(171, 73, 73, 0.2) inset;
+   }
+}

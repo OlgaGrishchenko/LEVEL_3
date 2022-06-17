@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="favicon/favicon.ico" type="image/x-icon" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="dist/css/style.min.css" />
+        <title>Document</title>
+    </head>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__container">
+            <svg class="logo">
+                <use href="assets/sprites.svg#logo"></use>
+            </svg>
+
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#features" class="header__nav-link"
+                            >Features</a
+                        >
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#about" class="header__nav-link">About</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#pricing" class="header__nav-link">Pricing</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#reviews" class="header__nav-link">Reviews</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#contact" class="header__nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </header>
+
+    <body>
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__content">
+                        <div class="content__info">
+                            <svg class="logo logo-big">
+                                <use href="assets/sprites.svg#logo"></use>
+                            </svg>
+                            <h1 class="hero__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
+                            <hr class="hero__divider">
+                            <h5 class="hero__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+                            <button type="button" class="btn hero__btn">Download</button>
+                        </div>
+
+                        <form
+                            action="mailto:it@gmail.com"
+                            method="post"
+                            class="form"
+                        >
+                            <div class="form__inner">
+                                <h4 class="form__title">
+                                    Try Your <span>FREE</span> Trial Today
+                                </h4>
+                                <label for="input-name" class="form__label"
+                                    >Name</label
+                                >
+                                <input
+                                    type="text"
+                                    name="name"
+                                    id="input-name"
+                                    required
+                                    class="form__input"
+                                />
+
+                                <label for="input-email" class="form__label"
+                                    >Email</label
+                                >
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="input-email"
+                                    required
+                                    class="form__input"
+                                />
+
+                                <label for="input-password" class="form__label"
+                                    >Password</label
+                                >
+                                <input
+                                    type="password"
+                                    name="password"
+                                    id="input-password"
+                                    required
+                                    class="form__input"
+                                />
+                            </div>
+                            <button type="submit" class="form-btn">
+                                Get Started
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer"></footer>
+    </body>
+</html>

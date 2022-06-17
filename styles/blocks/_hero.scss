@@ -1,0 +1,42 @@
+.hero {
+   padding-bottom: 185px;
+   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+   url(../../assets/hero/hero_bg.jpg) center/cover no-repeat;
+
+   &__content {
+      padding-top: 137px;
+      display: flex;
+      column-gap: 60px;
+   }
+
+   &__title {
+      margin-top: 65px;
+      font-family: 'Raleway';
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 56px;
+      text-transform: uppercase;
+      color: $white_color;
+   }
+
+   &__divider {
+      margin-top: 55px;
+      width: 170px;
+      color: $white_color;
+      background-color: $white_color;
+   }
+
+   &__description {
+      margin-top: 42px;
+      max-width: 270px;
+      font-family: 'Raleway';
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      color: $white_color;
+   }
+
+   &__btn {
+      margin-top: 42px;
+   }
+}
