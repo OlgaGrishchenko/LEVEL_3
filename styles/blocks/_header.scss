@@ -6,25 +6,38 @@
    &__container {
       display: flex;
       justify-content: space-between;
-      align-items: center;      
+      align-items: center;
+
+      >.logo {
+         @media (max-width:$screen-md-min) {
+            margin-top: 20px;;
+      }
+      }
    }
 
    &__nav {
       width: 570px;
 
+      @media (max-width:$screen-md-min) {
+         display: none;
+   }
    }
 
    &__nav-list {
       display: flex;
       list-style: none;
       align-items: center;
+      justify-content: center;
       margin: 0;
+      height: 75px;
+      line-height: 75px;
    }
 
    &__nav-item {
       width: 113px;
       height: 75px;
       text-align: center;
+      justify-content: center;
       cursor: pointer;
       transition: all 0.5s;
 
@@ -46,6 +59,5 @@
       font-weight: 600;
       font-size: 14px;
       line-height: 19px;
-   }
 }
-
+}

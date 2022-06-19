@@ -27,4 +27,19 @@ hr {
 .container {
     max-width: 1170px;
     margin: 0 auto;
+    padding: 0 15px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+
+    @media (max-width: 1024px) {
+        column-gap: 20px;
+    }
+
+    @media (max-width: 576px) {
+        display: block;
+    }
 }

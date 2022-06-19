@@ -1,9 +1,20 @@
 @import 'config/basic';
 @import 'config/variables';
 
+
+@import 'components/burger_menu';
 @import 'components/logo';
 @import 'components/form';
 @import 'components/button';
+@import 'components/divider';
 
 @import 'blocks/header';
 @import 'blocks/hero';
+@import 'blocks/media';
+@import 'blocks/about';
+@import 'blocks/features';
+@import 'blocks/pricing';
+@import 'blocks/reviews';
+@import 'blocks/download';
+@import 'blocks/contact';
+@import 'blocks/footer';

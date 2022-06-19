@@ -1,6 +1,6 @@
 .form {
    max-width: 470px;
-   height: min-content;
+   height: max-content;
    background-color: $white_color;
    border-radius: 10px;
    overflow: hidden;
@@ -21,12 +21,15 @@
       padding: 40px 50px 60px;
       display: flex;
       flex-direction: column;
+
+      @media (max-width: $screen-sm-min-small) {
+            padding: 35px 25px 40px;
+      }
    }
 
    &__title {
       margin-bottom: 70px;
       font-family: 'Open Sans';
-      font-style: normal;
       font-weight: 700;
       font-size: 24px;
       line-height: 33px;
@@ -36,6 +39,11 @@
 
       >span {
          color: $pink_color;
+      }
+
+      @media (max-width:$screen-laptop) {
+         font-size: 18px;
+         line-height: 25px;
       }
    }
 

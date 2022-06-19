@@ -1,0 +1,107 @@
+.contact {
+   margin-bottom: 50px;
+
+   @media (max-width: $screen-sm-min-small) {
+      margin-bottom: 40px;
+   }
+
+   &__title {
+      font-family: 'Raleway';
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 42px;
+      text-align: center;
+      margin-bottom: 60px;
+      text-transform: uppercase;
+
+      @media (max-width:$screen-laptop) {
+         font-size: 24px;
+         line-height: 28px;
+         margin-bottom: 50px;
+      }
+
+      @media (max-width:$screen-sm-min-small) {
+         font-size: 18px;
+         line-height: 21px;
+      }
+   }
+
+   &__description {
+      font-family: 'Raleway';
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      color: $light_grey_color;
+      margin-bottom: 79px;
+
+      @media (max-width:$screen-laptop) {
+         font-size: 14px;
+         line-height: 16px;
+         margin-bottom: 50px;
+      }
+
+      @media (max-width:$screen-sm-min-small) {
+         font-size: 14px;
+         line-height: 16px;
+         margin-bottom: 24px;
+      }
+   }
+}
+
+.contact__form {
+   display: flex;
+   gap: 30px;
+   margin-bottom: 30px;
+
+   @media (max-width:$screen-sm-min) {
+      display: block;
+   }
+
+
+   &-one {
+      display: flex;
+      flex-direction: column;
+      width: 571px;
+
+      @media (max-width:$screen-sm-min) {
+         width: 450px;
+         margin: 0 auto;
+      }
+
+      @media (max-width:$screen-sm-min) {
+         width: 288px;
+      }
+   }
+
+   &-two {
+      display: flex;
+      flex-direction: column;
+      width: 569px;
+      row-gap: 136px;
+
+      @media (max-width:$screen-sm-min) {
+         width: 450px;
+         margin: 0 auto;
+      }
+
+      @media (max-width:$screen-sm-min) {
+         width: 288px;
+      }
+   }
+}
+
+.contact__btn {
+   width: 370px;
+   height: 58px;
+   display: block;
+   margin: 0 auto;
+
+   @media (max-width:$screen-laptop) {
+      width: 318px;
+   }
+
+   @media (max-width:$screen-sm-min) {
+      width: 287px;
+   }
+}

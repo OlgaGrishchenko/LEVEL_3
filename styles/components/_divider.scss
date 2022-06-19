@@ -1,0 +1,19 @@
+.divider-pink {
+   width: 170px;
+   background-color: $pink_color;
+   border-color: $pink_color;
+   margin: 0 auto;
+   margin-bottom: 40px;
+
+   @media (max-width:$screen-laptop) {
+      width: 145px;
+      margin-bottom: 32px;
+   }
+
+   @media (max-width:$screen-sm-min-small) {
+      width: 134px;
+      margin-bottom: 24px;
+   }
+}
+
+

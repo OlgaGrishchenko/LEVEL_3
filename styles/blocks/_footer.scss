@@ -1,0 +1,65 @@
+.footer {
+   width: 100%;
+   background-color: $black_color;
+
+   &__icons {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin-bottom: 28px;
+      padding-top: 40px;
+
+      @media (max-width:$screen-laptop) {
+         gap: 27px;
+         margin-bottom: 38px;
+         padding-top: 35px;
+      }
+
+      @media (max-width:$screen-sm-min-small) {
+         gap: 17px;
+         margin-bottom: 27px;
+         padding-top: 35px;
+      }
+   }
+
+   &__text {
+      font-family: 'Raleway';
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      color: $label_color;
+      padding-bottom: 27px;
+
+      @media (max-width:$screen-laptop) {
+         font-size: 14px;
+         line-height: 16px;
+         padding-bottom: 30px;
+      }
+
+      @media (max-width:$screen-sm-min-small) {
+         padding-bottom: 44px;
+      }
+   }
+}
+
+.icon {
+   width: 53px;
+   height: 53px;
+
+   @media (max-width:$screen-laptop) {
+      width: 45px;
+      height: 45px;
+   }
+
+   @media (max-width:$screen-sm-min-small) {
+      width: 26px;
+      height: 26px;
+   }
+
+   &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+      stroke: $pink_color;
+   }
+}
